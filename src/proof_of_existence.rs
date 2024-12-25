@@ -81,8 +81,8 @@ pub enum Call<T: Config> {
 	appropriate function.
 */
 
-impl<T::Config> crate::support::Dispatch for Pallet<T> {
-
+impl<T: Config> crate::support::Dispatch for Pallet<T> {
+	
 	type Caller = T::AccountId;
 	type Call = Call<T>;
 
